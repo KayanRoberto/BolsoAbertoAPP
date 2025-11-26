@@ -38,31 +38,13 @@ Ferramentas	VS Code, GitHub, Figma, Postman
  └─ README.md
 
 ▶️ Como Executar
+Tenha baixado no computador: NodeJS
+
 1. Instale as dependências
 npm install
 
 2. Execute o projeto
 npm start
-
-3. Abra no celular
-
-Use o aplicativo Expo Go ou utilize um emulador Android/iOS.
-
-📸 Demonstrações
-
-Adicione aqui prints do app, como:
-
-Tela de login
-
-Dashboard
-
-Gráfico de gastos
-
-Cadastro de despesas
-
-Configurações
-
-(Posso gerar um modelo de mockup se quiser)
 
 🧪 Testes
 Caso utilizem Jest, Testing Library ou outro framework:
