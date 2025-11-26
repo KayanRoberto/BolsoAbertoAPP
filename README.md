@@ -3,10 +3,10 @@ Aplicativo de Controle Financeiro Pessoal
 Trabalho de Conclusão de Curso – Sistemas de Informação
 
 👥 Integrantes
-Kayan Roberto Santiago.
-Bruno Lacerda.
-Lucas Roseira.
-Matheus Puzzello.
+Kayan Roberto Santiago.<br>
+Bruno Lacerda.<br>
+Lucas Roseira.<br>
+Matheus Puzzello.<br>
 
 📘 Sobre o Projeto
 O Bolso Aberto é um aplicativo mobile desenvolvido como Trabalho de Conclusão de Curso.
