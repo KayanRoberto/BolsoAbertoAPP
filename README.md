@@ -2,7 +2,7 @@
 Aplicativo de Controle Financeiro Pessoal
 Trabalho de Conclusão de Curso – Sistemas de Informação
 
-👥 Integrantes
+👥 Integrantes<br>
 Kayan Roberto Santiago.<br>
 Bruno Lacerda.<br>
 Lucas Roseira.<br>
