@@ -1,2 +1,73 @@
-# BolsoAbertoAPP
-TCC
+📱 Bolso Aberto
+Aplicativo de Controle Financeiro Pessoal
+Trabalho de Conclusão de Curso – Sistemas de Informação
+
+👥 Integrantes
+Kayan Roberto Santiago.
+Bruno Lacerda.
+Lucas Roseira.
+Matheus Puzzello.
+
+📘 Sobre o Projeto
+O Bolso Aberto é um aplicativo mobile desenvolvido como Trabalho de Conclusão de Curso.
+O sistema tem como proposta simplificar o controle financeiro, permitindo que o usuário registre despesas, visualize seus gastos por categoria e acompanhe sua saúde financeira de forma prática e intuitiva.
+
+🎯 Objetivos
+✔ Ajudar o usuário a controlar seus gastos
+✔ Fornecer uma interface simples e direta
+✔ Exibir gráficos e relatórios financeiros
+✔ Demonstrar conhecimentos adquiridos durante o curso
+✔ Desenvolver um app funcional e publicável
+
+🛠️ Tecnologias Utilizadas
+Categoria	Tecnologias
+Linguagem	JavaScript / TypeScript (ajustar conforme projeto)
+Framework	React Native / Expo
+Banco de Dados	SQLite / Firebase / AsyncStorage
+Ferramentas	VS Code, GitHub, Figma, Postman
+📂 Estrutura do Projeto
+📁 bolso-aberto/
+ ├─ 📁 src/
+ │   ├─ components/
+ │   ├─ screens/
+ │   ├─ services/
+ │   ├─ utils/
+ │   └─ assets/
+ ├─ package.json
+ ├─ app.json
+ └─ README.md
+
+▶️ Como Executar
+1. Instale as dependências
+npm install
+
+2. Execute o projeto
+npm start
+
+3. Abra no celular
+
+Use o aplicativo Expo Go ou utilize um emulador Android/iOS.
+
+📸 Demonstrações
+
+Adicione aqui prints do app, como:
+
+Tela de login
+
+Dashboard
+
+Gráfico de gastos
+
+Cadastro de despesas
+
+Configurações
+
+(Posso gerar um modelo de mockup se quiser)
+
+🧪 Testes
+Caso utilizem Jest, Testing Library ou outro framework:
+npm test
+
+📄 Licença
+Projeto desenvolvido exclusivamente para fins acadêmicos.
+Não possui fins comerciais.
