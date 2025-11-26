@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Clean, modern color palette inspired by Nubank/Inter */
+    --background: 248 100% 98%;
+    --foreground: 227 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 227 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 227 15% 20%;
+
+    /* Soft purple primary color */
+    --primary: 262 52% 47%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Very subtle secondary colors */
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 227 15% 20%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 227 8% 50%;
+
+    --accent: 240 5% 96%;
+    --accent-foreground: 227 15% 20%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 262 52% 47%;
+
+    --radius: 1rem;
+
+    /* Refined financial colors - softer and more professional */
+    --success: 142 69% 38%;
+    --success-foreground: 0 0% 100%;
+    --warning: 35 91% 42%;
+    --warning-foreground: 0 0% 100%;
+    --danger: 0 72% 51%;
+    --danger-foreground: 0 0% 100%;
+
+    /* Clean, subtle gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(262 52% 47%), hsl(262 52% 55%));
+    --gradient-success: linear-gradient(135deg, hsl(142 69% 38%), hsl(142 69% 45%));
+    --gradient-warning: linear-gradient(135deg, hsl(35 91% 42%), hsl(35 91% 50%));
+    --gradient-danger: linear-gradient(135deg, hsl(0 72% 51%), hsl(0 72% 58%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(248 100% 99%));
+
+    /* Soft, professional shadows */
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    --shadow-financial: 0 4px 20px -4px rgba(124, 58, 237, 0.12);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* Mobile optimizations */
+    --mobile-padding: 1rem;
+    --mobile-gap: 0.75rem;
+    --touch-target: 44px;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 225 19% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 225 15% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 225 15% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 262 52% 60%;
+    --primary-foreground: 225 19% 7%;
+
+    --secondary: 225 10% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 225 10% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 225 10% 15%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 72% 65%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 225 10% 18%;
+    --input: 225 10% 18%;
+    --ring: 262 52% 60%;
+
+    /* Dark financial colors */
+    --success: 142 69% 50%;
+    --warning: 35 91% 55%;
+    --danger: 0 72% 65%;
+
+    /* Dark gradients */
+    --gradient-card: linear-gradient(145deg, hsl(225 15% 11%), hsl(225 15% 13%));
+    --shadow-financial: 0 4px 20px -4px rgba(124, 58, 237, 0.2);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    /* Disable text selection on mobile for better UX */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Mobile-first responsive utilities */
+  @media (max-width: 768px) {
+    .mobile-padding {
+      @apply p-4;
+    }
+    
+    .mobile-gap {
+      @apply gap-3;
+    }
+    
+    .touch-target {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+}
